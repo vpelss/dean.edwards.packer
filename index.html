@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -27,34 +28,35 @@
 <div>How it works: <a href="https://3perf.com/blog/packer/">https://3perf.com/blog/packer/</a></div>
 
 <form class="" id="form" method="post">
- <p id="help"><a href="https://web.archive.org/web/20120929074838/http://dean.edwards.name/packer/usage/">Help</a></p>
- <p><label class="paste">Paste:</label><br>
-  <textarea id="input" name="input" rows="10" cols="80" spellcheck="false"></textarea></p>
- <p id="controls">
-  <label for="base62">Base62 encode
-   <input type="checkbox" id="base62" name="base62" value="1"></label><br>
-  <label for="shrink">Shrink variables
-   <input type="checkbox" id="shrink" name="shrink" value="1"></label>
- </p>
- <p class="form-buttons" id="input-buttons">
-  <input type="file" id="upload-script" name="upload" disabled="">
-  <button type="button" id="load-script">Load</button>
-  <button type="button" id="clear-all">Clear</button>
-  <button type="button" id="pack-script">Pack</button>
- </p>
- <p><label class="copy">Copy:</label>
-  <textarea id="output" name="output" rows="10" cols="80" readonly="" spellcheck="false"></textarea></p>
- <p id="message" class="">ready</p>
- <p class="form-buttons" id="output-buttons">
-  <button type="submit" id="save-script" disabled="">Save</button>
-  <button type="button" id="decode-script" disabled="">Decode</button>
- </p>
+  <p id="help"><a href="https://web.archive.org/web/20120929074838/http://dean.edwards.name/packer/usage/" target="_blank">Help</a></p>
+  <p><label class="paste">Paste:</label><br>
+    <textarea id="input" name="input" rows="10" cols="80" spellcheck="false"></textarea>
+  </p>
+  <p id="controls">
+    <label for="base62">Base62 encode
+      <input type="checkbox" id="base62" name="base62" value="1"></label><br>
+    <label for="shrink">Shrink variables
+      <input type="checkbox" id="shrink" name="shrink" value="1"></label>
+  </p>
+  <p class="form-buttons" id="input-buttons">
+    <input type="file" id="upload-script" name="upload" disabled="">
+    <button type="button" id="load-script">Load</button>
+    <button type="button" id="clear-all">Clear</button>
+    <button type="button" id="pack-script">Pack</button>
+  </p>
+  <p><label class="copy">Copy:</label>
+    <textarea id="output" name="output" rows="10" cols="80" readonly="" spellcheck="false"></textarea>
+  </p>
+  <p id="message" class="">ready</p>
+  <p class="form-buttons" id="output-buttons">
+    <button type="submit" id="save-script" disabled="">Save</button>
+    <button type="button" id="decode-script" disabled="">Decode</button>
+  </p>
 </form>
   
     <script id="rendered-js" >
 // my.js
-
-    var base2 = {
+var base2 = {
         name: "base2",
         version: "1.0.1(pre)",
         exports: "Base, Package, Abstract, Module, Enumerable, Map, Collection, RegGrp, " + "assert, assertArity, assertType, " + "assignID, copy, counter, detect, extend, forEach, format, instanceOf, match, rescape, slice, trim, " + "I, K, Undefined, Null, True, False, bind, delegate, flip, not, partial, unbind",
@@ -2554,7 +2556,6 @@
         ondocumentmouseup: updateFlag,
         ondocumentkeyup: updateFlag
     });
-//}
 
 /*
      FILE ARCHIVED ON 06:03:49 Oct 24, 2012 AND RETRIEVED FROM THE
@@ -2578,7 +2579,6 @@ playback timings (ms):
 */
 
 //packer.js
-
 eval(base2.namespace);
 eval(JavaScript.namespace);
 
@@ -2785,8 +2785,6 @@ var Packer = Base.extend({
 	}
 });
 
-//}
-
 /*
      FILE ARCHIVED ON 15:52:34 Oct 06, 2012 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 23:43:20 Mar 09, 2026.
@@ -2809,17 +2807,6 @@ playback timings (ms):
 */
 
 //words.js
-
-var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
-let window = _____WB$wombat$assign$function_____("window");
-let self = _____WB$wombat$assign$function_____("self");
-let document = _____WB$wombat$assign$function_____("document");
-let location = _____WB$wombat$assign$function_____("location");
-let top = _____WB$wombat$assign$function_____("top");
-let parent = _____WB$wombat$assign$function_____("parent");
-let frames = _____WB$wombat$assign$function_____("frames");
-let opens = _____WB$wombat$assign$function_____("opens");
-
 var Words = Collection.extend({
 	constructor: function(script) {
 		this.base();
@@ -2882,8 +2869,6 @@ var Words = Collection.extend({
 	}
 });
 
-}
-
 /*
      FILE ARCHIVED ON 15:52:40 Oct 06, 2012 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 23:43:20 Mar 09, 2026.
@@ -2906,9 +2891,7 @@ playback timings (ms):
 */
 
 //bindings.js
-
 var packer = new Packer;
-
 new base2.JSB.RuleList({
 	"#form": {
 		ondocumentready: function() {
@@ -3021,15 +3004,12 @@ new base2.JSB.RuleList({
 		} 
 	}
 });
-
 if (!(0).toFixed) Number.prototype.toFixed = function(n) {
 	var e = Math.pow(10, n);
 	var r = String(Math.round(this * e));
 	if (r == 0) for (var i = 0; i < n; i++) r += "0";
 	return r.slice(0, r.length - n) + "." + r.slice(r.length - n);
 };
-
-//}
 
 /*
      FILE ARCHIVED ON 15:52:52 Oct 06, 2012 AND RETRIEVED FROM THE
